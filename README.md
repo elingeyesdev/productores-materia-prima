@@ -94,10 +94,7 @@ Para ejecutar directamente en su sistema operativo.
       DB_PASSWORD=su_contraseña
       ```
 
-5.  **Migrar y poblar base de datos:**
-    ```bash
-    php artisan migrate:fresh --seed
-    ```
+5.  **Descargar el archivo backup de la rama db-script y restaurarlo en postgre**
 
 6.  **Ejecutar servidor de desarrollo:**
     ```bash
