@@ -43,10 +43,8 @@ Esta opción levanta todo el entorno (App, Base de Datos y Web Server) automáti
 
     # Generar llave de aplicación
     docker-compose exec app php artisan key:generate
-
-    # Ejecutar migraciones y seeders (datos de prueba)
-    docker-compose exec app php artisan migrate:fresh --seed
     ```
+    Luego descargar el archivo agronexusdb.backup de la rama db-script, y restaurarlo en pgAdmin
 
 5.  **Acceder al sistema:**
     Abra su navegador en: `http://localhost:8080`
@@ -94,7 +92,7 @@ Para ejecutar directamente en su sistema operativo.
       DB_PASSWORD=su_contraseña
       ```
 
-5.  **Descargar el archivo backup de la rama db-script y restaurarlo en postgre**
+5.  **Descargar el archivo backup de la rama db-script y restaurarlo en pgAdmin**
 
 6.  **Ejecutar servidor de desarrollo:**
     ```bash
